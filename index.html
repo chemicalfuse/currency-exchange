@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency exchange</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <h1 id="header">Currency Converter</h1>
+      <form action="#" id="convertForm">
+        <div class="amount">
+          <h3>Enter Amount</h3>
+          <input type="number" value="1" id="amount" />
+        </div>
+        <div class="from-to">
+          <div class="from">
+            <h4>From</h4>
+            <select id="fromCurrency"></select>
+          </div>
+          <img src="Image.png" />
+          <div class="to">
+            <h4>To</h4>
+            <select id="toCurrency"></select>
+          </div>
+        </div>
+        <div class="result">
+          <h3 id="convertResult">Getting exchange rate...</h3>
+          <button class="button">Get Exchange Rate</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
